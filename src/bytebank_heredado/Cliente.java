@@ -1,10 +1,11 @@
 package bytebank_heredado;
 
-public class Cliente {
+public class Cliente extends Autenticable {
 
 	private String nombre;
 	private String documento;
 	private String telefono;
+	
 	public String getNombre() {
 		return nombre;
 	}
@@ -24,6 +25,11 @@ public class Cliente {
 		this.telefono = telefono;
 	}
 	
+	@Override
+	public boolean iniciarSesion (String clave){
+		return false;
+	}
+		
 	
 	
 }

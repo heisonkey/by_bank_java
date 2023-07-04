@@ -1,6 +1,6 @@
 package bytebank_heredado;
 
-public class Gerente extends FuncionarioAutenticable {
+public class Gerente extends Autenticable {
 
 	
 	// Sobre-escritura del metodo

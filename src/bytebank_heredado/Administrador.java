@@ -1,6 +1,6 @@
 package bytebank_heredado;
 
-public class Administrador extends FuncionarioAutenticable {
+public class Administrador extends Autenticable {
 
 private String clave;
 	
@@ -12,7 +12,7 @@ private String clave;
 		return clave == "AluraCursosOnline";
 	}
 	
-	
+	@Override
 	public double getBonificacion() {
 	
 		return 0;
